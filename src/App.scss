@@ -1,8 +1,28 @@
+@media (max-width: 450px) {
+    .buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        .button {
+            align-self: center;
+            #tweeet-quote {
+                box-sizing: border-box;
+            }
+        }
+        #new-quote {
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            align-self: center;
+        }
+    }
+}
+
 .App {
     text-align: center;
     #quote-box {
-        width: 500px;
+        max-width: 500px;
         padding: 25px;
+        margin: 0 50px;
         background-color: white;
         border-radius: 10px;
         #quote-icon {
@@ -15,10 +35,15 @@
             text-align: end;
             font-size: 20px;
         }
+        .buttons {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+        }
         .button {
             #tweet-quote {
                 border-radius: 10px;
-                float: left;
+                //float: left;
                 cursor: pointer;
                 color: white;
                 font-size: 15px;
@@ -27,7 +52,7 @@
             }
         }
         #new-quote {
-            float: right;
+            //   float: right;
             padding: 10px;
             font-size: 15px;
             border-radius: 10px;
